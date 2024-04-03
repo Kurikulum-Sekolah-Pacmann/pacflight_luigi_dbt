@@ -13,7 +13,7 @@ dim_aircrafts as (
 
 final_dim_seats as (
     select 
-        {{ dbt_utils.generate_surrogate_key( ["sds.seat_no"] ) }} as sk_seat_id,
+        {{ dbt_utils.generate_surrogate_key( ["da.sk_aircraft_code", "sds.seat_no"] ) }} as sk_seat_id,
         da.sk_aircraft_code,
         sds.seat_no,
         sds.fare_conditions,
