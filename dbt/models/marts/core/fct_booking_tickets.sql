@@ -48,7 +48,7 @@ dim_aircrafts as (
 
 final_fct_booking_tickets as (
     select 
-        {{ dbt_utils.generate_surrogate_key( ["sfbt.nk_book", "st.ticket_no"] ) }} as sk_booking_ticket_id,
+        {{ dbt_utils.generate_surrogate_key( ["sfbt.nk_book", "dp.sk_passenger_id", "stf.flight_id"] ) }} as sk_booking_ticket_id,
         sfbt.nk_book,
         dd1.date_id as book_date_local,
         dd2.date_id as book_date_utc,
