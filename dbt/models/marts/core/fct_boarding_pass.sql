@@ -45,7 +45,7 @@ stg_boarding_passes as (
 
 final_fct_boarding_pass as (
     select 
-        {{ dbt_utils.generate_surrogate_key ( ["st.ticket_no", "st.book_ref", "st.passenger_id"] ) }} as sk_boarding_pass_id,
+        {{ dbt_utils.generate_surrogate_key ( ["st.ticket_no", "stf.flight_id", "sbp.seat_no"] ) }} as sk_boarding_pass_id,
         st.ticket_no,
         st.book_ref,
         dp.sk_passenger_id,
