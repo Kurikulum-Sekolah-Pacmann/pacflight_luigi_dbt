@@ -1,0 +1,506 @@
+[0m06:42:15  Running with dbt=1.7.8
+[0m06:42:16  Registered adapter: postgres=1.7.8
+[0m06:42:16  Found 16 models, 1 operation, 2 seeds, 161 tests, 8 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m06:42:16  
+[0m06:42:17  Concurrency: 4 threads (target='dev')
+[0m06:42:17  
+[0m06:42:17  1 of 161 START test accepted_values_dim_seats_fare_conditions__Business__Comfort__Economy  [RUN]
+[0m06:42:17  2 of 161 START test dbt_constraints_foreign_key_dim_seats_sk_aircraft_code__sk_aircraft_code__ref_dim_aircrafts_  [RUN]
+[0m06:42:17  3 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_aircraft_code__sk_aircraft_code__ref_dim_aircrafts_  [RUN]
+[0m06:42:17  4 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_arrival_airport__sk_airport_code__ref_dim_airports_  [RUN]
+[0m06:42:17  1 of 161 PASS accepted_values_dim_seats_fare_conditions__Business__Comfort__Economy  [[32mPASS[0m in 0.21s]
+[0m06:42:17  5 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_departure_airport__sk_airport_code__ref_dim_airports_  [RUN]
+[0m06:42:17  2 of 161 PASS dbt_constraints_foreign_key_dim_seats_sk_aircraft_code__sk_aircraft_code__ref_dim_aircrafts_  [[32mPASS[0m in 0.24s]
+[0m06:42:17  6 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_scheduled_arrival_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:18  4 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_arrival_airport__sk_airport_code__ref_dim_airports_  [[32mPASS[0m in 0.92s]
+[0m06:42:18  7 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_scheduled_arrival_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:18  3 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_aircraft_code__sk_aircraft_code__ref_dim_aircrafts_  [[32mPASS[0m in 1.00s]
+[0m06:42:18  5 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_departure_airport__sk_airport_code__ref_dim_airports_  [[32mPASS[0m in 0.82s]
+[0m06:42:18  8 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_scheduled_arrival_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:18  9 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_scheduled_arrival_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:18  6 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_scheduled_arrival_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 0.92s]
+[0m06:42:18  10 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_scheduled_departure_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:19  10 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_scheduled_departure_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 0.77s]
+[0m06:42:19  11 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_scheduled_departure_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:19  7 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_scheduled_arrival_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 1.08s]
+[0m06:42:19  12 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_scheduled_departure_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:19  8 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_scheduled_arrival_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 1.11s]
+[0m06:42:19  13 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_scheduled_departure_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:19  9 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_scheduled_arrival_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 1.49s]
+[0m06:42:19  14 of 161 START test dbt_constraints_foreign_key_fct_boarding_pass_sk_passenger_id__sk_passenger_id__ref_dim_passengers_  [RUN]
+[0m06:42:20  11 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_scheduled_departure_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 1.52s]
+[0m06:42:20  15 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_actual_arrival_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:21  12 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_scheduled_departure_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 1.82s]
+[0m06:42:21  16 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_actual_arrival_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:21  13 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_scheduled_departure_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 2.41s]
+[0m06:42:21  17 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_actual_arrival_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:27  15 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_actual_arrival_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 6.75s]
+[0m06:42:27  18 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_actual_arrival_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:28  17 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_actual_arrival_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 6.47s]
+[0m06:42:28  16 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_actual_arrival_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 7.11s]
+[0m06:42:28  19 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_actual_departure_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:28  20 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_actual_departure_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:29  14 of 161 PASS dbt_constraints_foreign_key_fct_boarding_pass_sk_passenger_id__sk_passenger_id__ref_dim_passengers_  [[32mPASS[0m in 9.81s]
+[0m06:42:29  21 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_actual_departure_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:30  18 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_actual_arrival_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 3.12s]
+[0m06:42:30  22 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_actual_departure_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:32  20 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_actual_departure_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 3.68s]
+[0m06:42:32  23 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_arrival_airport__sk_airport_code__ref_dim_airports_  [RUN]
+[0m06:42:32  19 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_actual_departure_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 4.01s]
+[0m06:42:32  24 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_book_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:33  22 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_actual_departure_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 2.58s]
+[0m06:42:33  25 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_book_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:33  21 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_actual_departure_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 4.28s]
+[0m06:42:33  26 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_book_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:35  24 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_book_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 2.96s]
+[0m06:42:35  23 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_arrival_airport__sk_airport_code__ref_dim_airports_  [[32mPASS[0m in 3.37s]
+[0m06:42:35  27 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_book_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:35  28 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_departure_airport__sk_airport_code__ref_dim_airports_  [RUN]
+[0m06:42:35  25 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_book_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 2.73s]
+[0m06:42:35  29 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_scheduled_arrival_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:36  26 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_book_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 2.39s]
+[0m06:42:36  30 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_scheduled_arrival_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:37  27 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_book_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 2.49s]
+[0m06:42:38  31 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_scheduled_arrival_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:39  29 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_scheduled_arrival_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 3.05s]
+[0m06:42:39  32 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_scheduled_arrival_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:39  28 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_departure_airport__sk_airport_code__ref_dim_airports_  [[32mPASS[0m in 3.49s]
+[0m06:42:39  33 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_scheduled_departure_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:39  30 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_scheduled_arrival_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 3.26s]
+[0m06:42:39  34 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_scheduled_departure_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:40  31 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_scheduled_arrival_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 2.43s]
+[0m06:42:40  35 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_scheduled_departure_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:40  33 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_scheduled_departure_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 1.97s]
+[0m06:42:41  36 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_scheduled_departure_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:41  32 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_scheduled_arrival_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 2.18s]
+[0m06:42:41  37 of 161 START test dbt_constraints_foreign_key_fct_booking_tickets_sk_passenger_id__sk_passenger_id__ref_dim_passengers_  [RUN]
+[0m06:42:42  34 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_scheduled_departure_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 2.46s]
+[0m06:42:42  38 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_actual_arrival_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:42  35 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_scheduled_departure_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 1.69s]
+[0m06:42:42  39 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_actual_arrival_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:42  36 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_scheduled_departure_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 1.41s]
+[0m06:42:42  40 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_actual_arrival_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:42  38 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_actual_arrival_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 0.36s]
+[0m06:42:42  41 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_actual_arrival_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:42  39 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_actual_arrival_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 0.34s]
+[0m06:42:42  42 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_actual_departure_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:42  40 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_actual_arrival_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 0.37s]
+[0m06:42:42  43 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_actual_departure_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:42  41 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_actual_arrival_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 0.33s]
+[0m06:42:42  44 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_actual_departure_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:42  42 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_actual_departure_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 0.37s]
+[0m06:42:42  45 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_actual_departure_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:43  44 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_actual_departure_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 0.36s]
+[0m06:42:43  46 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_aircraft_code__sk_aircraft_code__ref_dim_aircrafts_  [RUN]
+[0m06:42:43  43 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_actual_departure_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 0.44s]
+[0m06:42:43  47 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_arrival_airport__sk_airport_code__ref_dim_airports_  [RUN]
+[0m06:42:43  45 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_actual_departure_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 0.67s]
+[0m06:42:43  48 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_departure_airport__sk_airport_code__ref_dim_airports_  [RUN]
+[0m06:42:43  47 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_arrival_airport__sk_airport_code__ref_dim_airports_  [[32mPASS[0m in 0.63s]
+[0m06:42:43  49 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_scheduled_arrival_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:43  46 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_aircraft_code__sk_aircraft_code__ref_dim_aircrafts_  [[32mPASS[0m in 0.71s]
+[0m06:42:43  50 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_scheduled_arrival_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:44  37 of 161 PASS dbt_constraints_foreign_key_fct_booking_tickets_sk_passenger_id__sk_passenger_id__ref_dim_passengers_  [[32mPASS[0m in 2.87s]
+[0m06:42:44  48 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_departure_airport__sk_airport_code__ref_dim_airports_  [[32mPASS[0m in 0.43s]
+[0m06:42:44  52 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_scheduled_arrival_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:44  51 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_scheduled_arrival_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:44  49 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_scheduled_arrival_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 0.31s]
+[0m06:42:44  50 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_scheduled_arrival_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 0.32s]
+[0m06:42:44  53 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_scheduled_departure_date_local__date_id__ref_dim_dates_  [RUN]
+[0m06:42:44  54 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_scheduled_departure_date_utc__date_id__ref_dim_dates_  [RUN]
+[0m06:42:44  52 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_scheduled_arrival_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 0.61s]
+[0m06:42:44  55 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_scheduled_departure_time_local__time_id__ref_dim_times_  [RUN]
+[0m06:42:44  51 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_scheduled_arrival_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 0.72s]
+[0m06:42:44  56 of 161 START test dbt_constraints_foreign_key_fct_flight_activities_scheduled_departure_time_utc__time_id__ref_dim_times_  [RUN]
+[0m06:42:44  53 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_scheduled_departure_date_local__date_id__ref_dim_dates_  [[32mPASS[0m in 0.59s]
+[0m06:42:44  57 of 161 START test dbt_constraints_foreign_key_fct_seat_occupied_daily_aircraft_code__sk_aircraft_code__ref_dim_aircrafts_  [RUN]
+[0m06:42:45  55 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_scheduled_departure_time_local__time_id__ref_dim_times_  [[32mPASS[0m in 0.31s]
+[0m06:42:45  58 of 161 START test dbt_constraints_foreign_key_fct_seat_occupied_daily_arrival_airport__sk_airport_code__ref_dim_airports_  [RUN]
+[0m06:42:45  54 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_scheduled_departure_date_utc__date_id__ref_dim_dates_  [[32mPASS[0m in 0.66s]
+[0m06:42:45  59 of 161 START test dbt_constraints_foreign_key_fct_seat_occupied_daily_date_flight__date_id__ref_dim_dates_  [RUN]
+[0m06:42:45  56 of 161 PASS dbt_constraints_foreign_key_fct_flight_activities_scheduled_departure_time_utc__time_id__ref_dim_times_  [[32mPASS[0m in 0.95s]
+[0m06:42:45  57 of 161 PASS dbt_constraints_foreign_key_fct_seat_occupied_daily_aircraft_code__sk_aircraft_code__ref_dim_aircrafts_  [[32mPASS[0m in 0.91s]
+[0m06:42:45  60 of 161 START test dbt_constraints_foreign_key_fct_seat_occupied_daily_departure_airport__sk_airport_code__ref_dim_airports_  [RUN]
+[0m06:42:45  61 of 161 START test dbt_constraints_primary_key_dim_aircrafts_sk_aircraft_code  [RUN]
+[0m06:42:45  58 of 161 PASS dbt_constraints_foreign_key_fct_seat_occupied_daily_arrival_airport__sk_airport_code__ref_dim_airports_  [[32mPASS[0m in 0.83s]
+[0m06:42:46  59 of 161 PASS dbt_constraints_foreign_key_fct_seat_occupied_daily_date_flight__date_id__ref_dim_dates_  [[32mPASS[0m in 0.63s]
+[0m06:42:46  63 of 161 START test dbt_constraints_primary_key_dim_dates_date_id ............. [RUN]
+[0m06:42:46  62 of 161 START test dbt_constraints_primary_key_dim_airports_sk_airport_code .. [RUN]
+[0m06:42:46  60 of 161 PASS dbt_constraints_foreign_key_fct_seat_occupied_daily_departure_airport__sk_airport_code__ref_dim_airports_  [[32mPASS[0m in 0.36s]
+[0m06:42:46  64 of 161 START test dbt_constraints_primary_key_dim_passengers_sk_passenger_id  [RUN]
+[0m06:42:46  61 of 161 PASS dbt_constraints_primary_key_dim_aircrafts_sk_aircraft_code ...... [[32mPASS[0m in 0.51s]
+[0m06:42:46  65 of 161 START test dbt_constraints_primary_key_dim_seats_sk_seat_id .......... [RUN]
+[0m06:42:46  63 of 161 PASS dbt_constraints_primary_key_dim_dates_date_id ................... [[32mPASS[0m in 0.38s]
+[0m06:42:46  66 of 161 START test dbt_constraints_primary_key_dim_times_time_id ............. [RUN]
+[0m06:42:46  62 of 161 PASS dbt_constraints_primary_key_dim_airports_sk_airport_code ........ [[32mPASS[0m in 0.43s]
+[0m06:42:46  67 of 161 START test dbt_constraints_primary_key_fct_boarding_pass_sk_boarding_pass_id  [RUN]
+[0m06:42:46  66 of 161 PASS dbt_constraints_primary_key_dim_times_time_id ................... [[32mPASS[0m in 0.34s]
+[0m06:42:46  68 of 161 START test dbt_constraints_primary_key_fct_booking_tickets_sk_booking_ticket_id  [RUN]
+[0m06:42:46  65 of 161 PASS dbt_constraints_primary_key_dim_seats_sk_seat_id ................ [[32mPASS[0m in 0.52s]
+[0m06:42:46  69 of 161 START test dbt_constraints_primary_key_fct_flight_activities_sk_flight_id  [RUN]
+[0m06:42:47  69 of 161 PASS dbt_constraints_primary_key_fct_flight_activities_sk_flight_id .. [[32mPASS[0m in 0.16s]
+[0m06:42:47  70 of 161 START test dbt_constraints_primary_key_fct_seat_occupied_daily_sk_seat_occupied_daily  [RUN]
+[0m06:42:47  70 of 161 PASS dbt_constraints_primary_key_fct_seat_occupied_daily_sk_seat_occupied_daily  [[32mPASS[0m in 0.12s]
+[0m06:42:47  71 of 161 START test dbt_expectations_expect_column_values_to_be_between_fct_seat_occupied_daily_empty_seats__999__0  [RUN]
+[0m06:42:47  71 of 161 PASS dbt_expectations_expect_column_values_to_be_between_fct_seat_occupied_daily_empty_seats__999__0  [[32mPASS[0m in 0.17s]
+[0m06:42:47  72 of 161 START test dbt_expectations_expect_column_values_to_be_between_fct_seat_occupied_daily_seat_occupied__999__0  [RUN]
+[0m06:42:47  72 of 161 PASS dbt_expectations_expect_column_values_to_be_between_fct_seat_occupied_daily_seat_occupied__999__0  [[32mPASS[0m in 0.11s]
+[0m06:42:47  73 of 161 START test dbt_expectations_expect_column_values_to_be_between_fct_seat_occupied_daily_total_seat__999__0  [RUN]
+[0m06:42:47  73 of 161 PASS dbt_expectations_expect_column_values_to_be_between_fct_seat_occupied_daily_total_seat__999__0  [[32mPASS[0m in 0.15s]
+[0m06:42:47  74 of 161 START test not_null_dim_aircrafts_nk_aircraft_code ................... [RUN]
+[0m06:42:47  74 of 161 PASS not_null_dim_aircrafts_nk_aircraft_code ......................... [[32mPASS[0m in 0.08s]
+[0m06:42:47  75 of 161 START test not_null_dim_aircrafts_sk_aircraft_code ................... [RUN]
+[0m06:42:48  75 of 161 PASS not_null_dim_aircrafts_sk_aircraft_code ......................... [[32mPASS[0m in 0.23s]
+[0m06:42:48  76 of 161 START test not_null_dim_airports_nk_airport_code ..................... [RUN]
+[0m06:42:48  76 of 161 PASS not_null_dim_airports_nk_airport_code ........................... [[32mPASS[0m in 0.15s]
+[0m06:42:48  77 of 161 START test not_null_dim_airports_sk_airport_code ..................... [RUN]
+[0m06:42:48  77 of 161 PASS not_null_dim_airports_sk_airport_code ........................... [[32mPASS[0m in 0.12s]
+[0m06:42:48  78 of 161 START test not_null_dim_dates_date_id ................................ [RUN]
+[0m06:42:48  78 of 161 PASS not_null_dim_dates_date_id ...................................... [[32mPASS[0m in 0.15s]
+[0m06:42:48  79 of 161 START test not_null_dim_passengers_nk_passenger_id ................... [RUN]
+[0m06:42:48  79 of 161 PASS not_null_dim_passengers_nk_passenger_id ......................... [[32mPASS[0m in 0.18s]
+[0m06:42:48  80 of 161 START test not_null_dim_passengers_sk_passenger_id ................... [RUN]
+[0m06:42:49  80 of 161 PASS not_null_dim_passengers_sk_passenger_id ......................... [[32mPASS[0m in 0.48s]
+[0m06:42:49  81 of 161 START test not_null_dim_seats_fare_conditions ........................ [RUN]
+[0m06:42:49  81 of 161 PASS not_null_dim_seats_fare_conditions .............................. [[32mPASS[0m in 0.10s]
+[0m06:42:49  82 of 161 START test not_null_dim_seats_seat_no ................................ [RUN]
+[0m06:42:49  64 of 161 PASS dbt_constraints_primary_key_dim_passengers_sk_passenger_id ...... [[32mPASS[0m in 3.01s]
+[0m06:42:49  83 of 161 START test not_null_dim_seats_sk_aircraft_code ....................... [RUN]
+[0m06:42:49  82 of 161 PASS not_null_dim_seats_seat_no ...................................... [[32mPASS[0m in 0.07s]
+[0m06:42:49  84 of 161 START test not_null_dim_seats_sk_seat_id ............................. [RUN]
+[0m06:42:49  83 of 161 PASS not_null_dim_seats_sk_aircraft_code ............................. [[32mPASS[0m in 0.09s]
+[0m06:42:49  85 of 161 START test not_null_dim_times_time_id ................................ [RUN]
+[0m06:42:49  84 of 161 PASS not_null_dim_seats_sk_seat_id ................................... [[32mPASS[0m in 0.16s]
+[0m06:42:49  86 of 161 START test not_null_fct_boarding_pass_aircraft_code .................. [RUN]
+[0m06:42:49  85 of 161 PASS not_null_dim_times_time_id ...................................... [[32mPASS[0m in 0.15s]
+[0m06:42:49  87 of 161 START test not_null_fct_boarding_pass_arrival_airport ................ [RUN]
+[0m06:42:49  86 of 161 PASS not_null_fct_boarding_pass_aircraft_code ........................ [[32mPASS[0m in 0.48s]
+[0m06:42:50  88 of 161 START test not_null_fct_boarding_pass_boarding_no .................... [RUN]
+[0m06:42:50  87 of 161 PASS not_null_fct_boarding_pass_arrival_airport ...................... [[32mPASS[0m in 0.52s]
+[0m06:42:50  89 of 161 START test not_null_fct_boarding_pass_book_ref ....................... [RUN]
+[0m06:42:50  89 of 161 PASS not_null_fct_boarding_pass_book_ref ............................. [[32mPASS[0m in 0.48s]
+[0m06:42:50  90 of 161 START test not_null_fct_boarding_pass_departure_airport .............. [RUN]
+[0m06:42:50  88 of 161 PASS not_null_fct_boarding_pass_boarding_no .......................... [[32mPASS[0m in 0.65s]
+[0m06:42:50  91 of 161 START test not_null_fct_boarding_pass_flight_id ...................... [RUN]
+[0m06:42:51  91 of 161 PASS not_null_fct_boarding_pass_flight_id ............................ [[32mPASS[0m in 0.37s]
+[0m06:42:51  90 of 161 PASS not_null_fct_boarding_pass_departure_airport .................... [[32mPASS[0m in 0.46s]
+[0m06:42:51  92 of 161 START test not_null_fct_boarding_pass_flight_no ...................... [RUN]
+[0m06:42:51  93 of 161 START test not_null_fct_boarding_pass_scheduled_arrival_date_local ... [RUN]
+[0m06:42:51  93 of 161 PASS not_null_fct_boarding_pass_scheduled_arrival_date_local ......... [[32mPASS[0m in 0.50s]
+[0m06:42:51  92 of 161 PASS not_null_fct_boarding_pass_flight_no ............................ [[32mPASS[0m in 0.48s]
+[0m06:42:51  94 of 161 START test not_null_fct_boarding_pass_scheduled_arrival_date_utc ..... [RUN]
+[0m06:42:51  95 of 161 START test not_null_fct_boarding_pass_scheduled_arrival_time_local ... [RUN]
+[0m06:42:51  94 of 161 PASS not_null_fct_boarding_pass_scheduled_arrival_date_utc ........... [[32mPASS[0m in 0.36s]
+[0m06:42:51  96 of 161 START test not_null_fct_boarding_pass_scheduled_arrival_time_utc ..... [RUN]
+[0m06:42:52  95 of 161 PASS not_null_fct_boarding_pass_scheduled_arrival_time_local ......... [[32mPASS[0m in 0.43s]
+[0m06:42:52  97 of 161 START test not_null_fct_boarding_pass_scheduled_departure_date_local . [RUN]
+[0m06:42:52  96 of 161 PASS not_null_fct_boarding_pass_scheduled_arrival_time_utc ........... [[32mPASS[0m in 0.61s]
+[0m06:42:52  98 of 161 START test not_null_fct_boarding_pass_scheduled_departure_date_utc ... [RUN]
+[0m06:42:52  97 of 161 PASS not_null_fct_boarding_pass_scheduled_departure_date_local ....... [[32mPASS[0m in 0.52s]
+[0m06:42:52  99 of 161 START test not_null_fct_boarding_pass_scheduled_departure_time_local . [RUN]
+[0m06:42:52  67 of 161 PASS dbt_constraints_primary_key_fct_boarding_pass_sk_boarding_pass_id  [[32mPASS[0m in 5.96s]
+[0m06:42:52  100 of 161 START test not_null_fct_boarding_pass_scheduled_departure_time_utc .. [RUN]
+[0m06:42:53  98 of 161 PASS not_null_fct_boarding_pass_scheduled_departure_date_utc ......... [[32mPASS[0m in 0.72s]
+[0m06:42:53  101 of 161 START test not_null_fct_boarding_pass_seat_no ....................... [RUN]
+[0m06:42:53  100 of 161 PASS not_null_fct_boarding_pass_scheduled_departure_time_utc ........ [[32mPASS[0m in 0.75s]
+[0m06:42:53  102 of 161 START test not_null_fct_boarding_pass_sk_boarding_pass_id ........... [RUN]
+[0m06:42:53  99 of 161 PASS not_null_fct_boarding_pass_scheduled_departure_time_local ....... [[32mPASS[0m in 1.28s]
+[0m06:42:53  103 of 161 START test not_null_fct_boarding_pass_sk_passenger_id ............... [RUN]
+[0m06:42:54  102 of 161 PASS not_null_fct_boarding_pass_sk_boarding_pass_id ................. [[32mPASS[0m in 1.21s]
+[0m06:42:54  104 of 161 START test not_null_fct_boarding_pass_ticket_no ..................... [RUN]
+[0m06:42:54  101 of 161 PASS not_null_fct_boarding_pass_seat_no ............................. [[32mPASS[0m in 1.50s]
+[0m06:42:54  105 of 161 START test not_null_fct_booking_tickets_actual_arrival_date_local ... [RUN]
+[0m06:42:56  104 of 161 PASS not_null_fct_boarding_pass_ticket_no ........................... [[32mPASS[0m in 1.60s]
+[0m06:42:56  103 of 161 PASS not_null_fct_boarding_pass_sk_passenger_id ..................... [[32mPASS[0m in 2.37s]
+[0m06:42:56  106 of 161 START test not_null_fct_booking_tickets_actual_arrival_date_utc ..... [RUN]
+[0m06:42:56  107 of 161 START test not_null_fct_booking_tickets_actual_arrival_time_local ... [RUN]
+[0m06:42:57  105 of 161 PASS not_null_fct_booking_tickets_actual_arrival_date_local ......... [[32mPASS[0m in 3.05s]
+[0m06:42:57  108 of 161 START test not_null_fct_booking_tickets_actual_arrival_time_utc ..... [RUN]
+[0m06:42:58  107 of 161 PASS not_null_fct_booking_tickets_actual_arrival_time_local ......... [[32mPASS[0m in 2.61s]
+[0m06:42:58  109 of 161 START test not_null_fct_booking_tickets_actual_departure_date_local . [RUN]
+[0m06:42:59  106 of 161 PASS not_null_fct_booking_tickets_actual_arrival_date_utc ........... [[32mPASS[0m in 2.80s]
+[0m06:42:59  110 of 161 START test not_null_fct_booking_tickets_actual_departure_date_utc ... [RUN]
+[0m06:43:00  108 of 161 PASS not_null_fct_booking_tickets_actual_arrival_time_utc ........... [[32mPASS[0m in 2.63s]
+[0m06:43:00  111 of 161 START test not_null_fct_booking_tickets_actual_departure_time_local . [RUN]
+[0m06:43:00  109 of 161 PASS not_null_fct_booking_tickets_actual_departure_date_local ....... [[32mPASS[0m in 1.90s]
+[0m06:43:00  112 of 161 START test not_null_fct_booking_tickets_actual_departure_time_utc ... [RUN]
+[0m06:43:01  110 of 161 PASS not_null_fct_booking_tickets_actual_departure_date_utc ......... [[32mPASS[0m in 1.80s]
+[0m06:43:01  113 of 161 START test not_null_fct_booking_tickets_arrival_airport ............. [RUN]
+[0m06:43:01  68 of 161 PASS dbt_constraints_primary_key_fct_booking_tickets_sk_booking_ticket_id  [[32mPASS[0m in 14.29s]
+[0m06:43:01  114 of 161 START test not_null_fct_booking_tickets_book_date_local ............. [RUN]
+[0m06:43:02  114 of 161 PASS not_null_fct_booking_tickets_book_date_local ................... [[32mPASS[0m in 1.27s]
+[0m06:43:02  115 of 161 START test not_null_fct_booking_tickets_book_date_utc ............... [RUN]
+[0m06:43:02  111 of 161 PASS not_null_fct_booking_tickets_actual_departure_time_local ....... [[32mPASS[0m in 2.02s]
+[0m06:43:02  113 of 161 PASS not_null_fct_booking_tickets_arrival_airport ................... [[32mPASS[0m in 1.54s]
+[0m06:43:02  116 of 161 START test not_null_fct_booking_tickets_book_time_local ............. [RUN]
+[0m06:43:02  117 of 161 START test not_null_fct_booking_tickets_book_time_utc ............... [RUN]
+[0m06:43:02  112 of 161 PASS not_null_fct_booking_tickets_actual_departure_time_utc ......... [[32mPASS[0m in 1.78s]
+[0m06:43:02  118 of 161 START test not_null_fct_booking_tickets_departure_airport ........... [RUN]
+[0m06:43:03  117 of 161 PASS not_null_fct_booking_tickets_book_time_utc ..................... [[32mPASS[0m in 0.94s]
+[0m06:43:03  119 of 161 START test not_null_fct_booking_tickets_flight_no ................... [RUN]
+[0m06:43:03  115 of 161 PASS not_null_fct_booking_tickets_book_date_utc ..................... [[32mPASS[0m in 1.25s]
+[0m06:43:03  120 of 161 START test not_null_fct_booking_tickets_nk_book ..................... [RUN]
+[0m06:43:03  116 of 161 PASS not_null_fct_booking_tickets_book_time_local ................... [[32mPASS[0m in 1.29s]
+[0m06:43:03  121 of 161 START test not_null_fct_booking_tickets_nk_flight_id ................ [RUN]
+[0m06:43:04  118 of 161 PASS not_null_fct_booking_tickets_departure_airport ................. [[32mPASS[0m in 1.70s]
+[0m06:43:04  122 of 161 START test not_null_fct_booking_tickets_scheduled_arrival_date_local  [RUN]
+[0m06:43:04  119 of 161 PASS not_null_fct_booking_tickets_flight_no ......................... [[32mPASS[0m in 1.21s]
+[0m06:43:04  123 of 161 START test not_null_fct_booking_tickets_scheduled_arrival_date_utc .. [RUN]
+[0m06:43:04  120 of 161 PASS not_null_fct_booking_tickets_nk_book ........................... [[32mPASS[0m in 1.13s]
+[0m06:43:04  124 of 161 START test not_null_fct_booking_tickets_scheduled_arrival_time_local  [RUN]
+[0m06:43:05  121 of 161 PASS not_null_fct_booking_tickets_nk_flight_id ...................... [[32mPASS[0m in 1.09s]
+[0m06:43:05  125 of 161 START test not_null_fct_booking_tickets_scheduled_arrival_time_utc .. [RUN]
+[0m06:43:05  122 of 161 PASS not_null_fct_booking_tickets_scheduled_arrival_date_local ...... [[32mPASS[0m in 1.14s]
+[0m06:43:05  126 of 161 START test not_null_fct_booking_tickets_scheduled_departure_date_local  [RUN]
+[0m06:43:06  124 of 161 PASS not_null_fct_booking_tickets_scheduled_arrival_time_local ...... [[32mPASS[0m in 1.38s]
+[0m06:43:06  127 of 161 START test not_null_fct_booking_tickets_scheduled_departure_date_utc  [RUN]
+[0m06:43:06  123 of 161 PASS not_null_fct_booking_tickets_scheduled_arrival_date_utc ........ [[32mPASS[0m in 1.55s]
+[0m06:43:06  128 of 161 START test not_null_fct_booking_tickets_scheduled_departure_time_local  [RUN]
+[0m06:43:06  125 of 161 PASS not_null_fct_booking_tickets_scheduled_arrival_time_utc ........ [[32mPASS[0m in 1.62s]
+[0m06:43:06  129 of 161 START test not_null_fct_booking_tickets_scheduled_departure_time_utc  [RUN]
+[0m06:43:06  126 of 161 PASS not_null_fct_booking_tickets_scheduled_departure_date_local .... [[32mPASS[0m in 1.16s]
+[0m06:43:06  130 of 161 START test not_null_fct_booking_tickets_sk_booking_ticket_id ........ [RUN]
+[0m06:43:06  127 of 161 PASS not_null_fct_booking_tickets_scheduled_departure_date_utc ...... [[32mPASS[0m in 0.57s]
+[0m06:43:06  131 of 161 START test not_null_fct_booking_tickets_sk_passenger_id ............. [RUN]
+[0m06:43:07  128 of 161 PASS not_null_fct_booking_tickets_scheduled_departure_time_local .... [[32mPASS[0m in 0.57s]
+[0m06:43:07  132 of 161 START test not_null_fct_booking_tickets_ticket_no ................... [RUN]
+[0m06:43:07  130 of 161 PASS not_null_fct_booking_tickets_sk_booking_ticket_id .............. [[32mPASS[0m in 0.29s]
+[0m06:43:07  133 of 161 START test not_null_fct_flight_activities_actual_arrival_date_local . [RUN]
+[0m06:43:07  133 of 161 PASS not_null_fct_flight_activities_actual_arrival_date_local ....... [[32mPASS[0m in 0.10s]
+[0m06:43:07  134 of 161 START test not_null_fct_flight_activities_actual_arrival_date_utc ... [RUN]
+[0m06:43:07  134 of 161 PASS not_null_fct_flight_activities_actual_arrival_date_utc ......... [[32mPASS[0m in 0.07s]
+[0m06:43:07  135 of 161 START test not_null_fct_flight_activities_actual_arrival_time_local . [RUN]
+[0m06:43:07  132 of 161 PASS not_null_fct_booking_tickets_ticket_no ......................... [[32mPASS[0m in 0.34s]
+[0m06:43:07  131 of 161 PASS not_null_fct_booking_tickets_sk_passenger_id ................... [[32mPASS[0m in 0.46s]
+[0m06:43:07  136 of 161 START test not_null_fct_flight_activities_actual_arrival_time_utc ... [RUN]
+[0m06:43:07  129 of 161 PASS not_null_fct_booking_tickets_scheduled_departure_time_utc ...... [[32mPASS[0m in 0.66s]
+[0m06:43:07  137 of 161 START test not_null_fct_flight_activities_actual_departure_date_local  [RUN]
+[0m06:43:07  138 of 161 START test not_null_fct_flight_activities_actual_departure_date_utc . [RUN]
+[0m06:43:07  135 of 161 PASS not_null_fct_flight_activities_actual_arrival_time_local ....... [[32mPASS[0m in 0.13s]
+[0m06:43:07  139 of 161 START test not_null_fct_flight_activities_actual_departure_time_local  [RUN]
+[0m06:43:07  136 of 161 PASS not_null_fct_flight_activities_actual_arrival_time_utc ......... [[32mPASS[0m in 0.14s]
+[0m06:43:07  140 of 161 START test not_null_fct_flight_activities_actual_departure_time_utc . [RUN]
+[0m06:43:07  137 of 161 PASS not_null_fct_flight_activities_actual_departure_date_local ..... [[32mPASS[0m in 0.15s]
+[0m06:43:07  141 of 161 START test not_null_fct_flight_activities_aircraft_code ............. [RUN]
+[0m06:43:07  138 of 161 PASS not_null_fct_flight_activities_actual_departure_date_utc ....... [[32mPASS[0m in 0.16s]
+[0m06:43:07  139 of 161 PASS not_null_fct_flight_activities_actual_departure_time_local ..... [[32mPASS[0m in 0.11s]
+[0m06:43:07  142 of 161 START test not_null_fct_flight_activities_arrival_airport ........... [RUN]
+[0m06:43:07  143 of 161 START test not_null_fct_flight_activities_departure_airport ......... [RUN]
+[0m06:43:07  141 of 161 PASS not_null_fct_flight_activities_aircraft_code ................... [[32mPASS[0m in 0.12s]
+[0m06:43:07  144 of 161 START test not_null_fct_flight_activities_flight_no ................. [RUN]
+[0m06:43:07  140 of 161 PASS not_null_fct_flight_activities_actual_departure_time_utc ....... [[32mPASS[0m in 0.16s]
+[0m06:43:07  143 of 161 PASS not_null_fct_flight_activities_departure_airport ............... [[32mPASS[0m in 0.12s]
+[0m06:43:07  145 of 161 START test not_null_fct_flight_activities_nk_flight_id .............. [RUN]
+[0m06:43:07  146 of 161 START test not_null_fct_flight_activities_scheduled_arrival_date_local  [RUN]
+[0m06:43:07  142 of 161 PASS not_null_fct_flight_activities_arrival_airport ................. [[32mPASS[0m in 0.14s]
+[0m06:43:07  147 of 161 START test not_null_fct_flight_activities_scheduled_arrival_date_utc  [RUN]
+[0m06:43:07  144 of 161 PASS not_null_fct_flight_activities_flight_no ....................... [[32mPASS[0m in 0.12s]
+[0m06:43:07  148 of 161 START test not_null_fct_flight_activities_scheduled_arrival_time_local  [RUN]
+[0m06:43:07  146 of 161 PASS not_null_fct_flight_activities_scheduled_arrival_date_local .... [[32mPASS[0m in 0.15s]
+[0m06:43:07  145 of 161 PASS not_null_fct_flight_activities_nk_flight_id .................... [[32mPASS[0m in 0.14s]
+[0m06:43:07  149 of 161 START test not_null_fct_flight_activities_scheduled_arrival_time_utc  [RUN]
+[0m06:43:07  150 of 161 START test not_null_fct_flight_activities_scheduled_departure_date_local  [RUN]
+[0m06:43:08  147 of 161 PASS not_null_fct_flight_activities_scheduled_arrival_date_utc ...... [[32mPASS[0m in 0.44s]
+[0m06:43:08  151 of 161 START test not_null_fct_flight_activities_scheduled_departure_date_utc  [RUN]
+[0m06:43:08  148 of 161 PASS not_null_fct_flight_activities_scheduled_arrival_time_local .... [[32mPASS[0m in 0.40s]
+[0m06:43:08  152 of 161 START test not_null_fct_flight_activities_scheduled_departure_time_local  [RUN]
+[0m06:43:08  149 of 161 PASS not_null_fct_flight_activities_scheduled_arrival_time_utc ...... [[32mPASS[0m in 0.42s]
+[0m06:43:08  153 of 161 START test not_null_fct_flight_activities_scheduled_departure_time_utc  [RUN]
+[0m06:43:08  150 of 161 PASS not_null_fct_flight_activities_scheduled_departure_date_local .. [[32mPASS[0m in 0.16s]
+[0m06:43:08  151 of 161 PASS not_null_fct_flight_activities_scheduled_departure_date_utc .... [[32mPASS[0m in 0.15s]
+[0m06:43:08  154 of 161 START test not_null_fct_flight_activities_sk_flight_id .............. [RUN]
+[0m06:43:08  155 of 161 START test not_null_fct_seat_occupied_daily_aircraft_code ........... [RUN]
+[0m06:43:08  152 of 161 PASS not_null_fct_flight_activities_scheduled_departure_time_local .. [[32mPASS[0m in 0.13s]
+[0m06:43:08  156 of 161 START test not_null_fct_seat_occupied_daily_arrival_airport ......... [RUN]
+[0m06:43:08  153 of 161 PASS not_null_fct_flight_activities_scheduled_departure_time_utc .... [[32mPASS[0m in 0.17s]
+[0m06:43:08  157 of 161 START test not_null_fct_seat_occupied_daily_date_flight ............. [RUN]
+[0m06:43:08  155 of 161 PASS not_null_fct_seat_occupied_daily_aircraft_code ................. [[32mPASS[0m in 0.17s]
+[0m06:43:08  158 of 161 START test not_null_fct_seat_occupied_daily_departure_airport ....... [RUN]
+[0m06:43:08  154 of 161 PASS not_null_fct_flight_activities_sk_flight_id .................... [[32mPASS[0m in 0.19s]
+[0m06:43:08  159 of 161 START test not_null_fct_seat_occupied_daily_flight_no ............... [RUN]
+[0m06:43:08  156 of 161 PASS not_null_fct_seat_occupied_daily_arrival_airport ............... [[32mPASS[0m in 0.20s]
+[0m06:43:08  160 of 161 START test not_null_fct_seat_occupied_daily_nk_flight_id ............ [RUN]
+[0m06:43:08  158 of 161 PASS not_null_fct_seat_occupied_daily_departure_airport ............. [[32mPASS[0m in 0.12s]
+[0m06:43:08  157 of 161 PASS not_null_fct_seat_occupied_daily_date_flight ................... [[32mPASS[0m in 0.15s]
+[0m06:43:08  161 of 161 START test not_null_fct_seat_occupied_daily_sk_seat_occupied_daily .. [RUN]
+[0m06:43:08  159 of 161 PASS not_null_fct_seat_occupied_daily_flight_no ..................... [[32mPASS[0m in 0.11s]
+[0m06:43:08  160 of 161 PASS not_null_fct_seat_occupied_daily_nk_flight_id .................. [[32mPASS[0m in 0.09s]
+[0m06:43:08  161 of 161 PASS not_null_fct_seat_occupied_daily_sk_seat_occupied_daily ........ [[32mPASS[0m in 0.05s]
+[0m06:43:08  
+[0m06:43:08  Running 1 on-run-end hook
+[0m06:43:08  Running dbt Constraints
+[0m06:43:08  Creating not null constraint for: nk_aircraft_code in "pacflight"."pacflight_dbt_luigi"."dim_aircrafts"
+[0m06:43:08  Creating not null constraint for: sk_aircraft_code in "pacflight"."pacflight_dbt_luigi"."dim_aircrafts"
+[0m06:43:08  Creating not null constraint for: nk_airport_code in "pacflight"."pacflight_dbt_luigi"."dim_airports"
+[0m06:43:08  Creating not null constraint for: sk_airport_code in "pacflight"."pacflight_dbt_luigi"."dim_airports"
+[0m06:43:08  Creating not null constraint for: date_id in "pacflight"."pacflight_dbt_luigi"."dim_dates"
+[0m06:43:08  Creating not null constraint for: nk_passenger_id in "pacflight"."pacflight_dbt_luigi"."dim_passengers"
+[0m06:43:09  Creating not null constraint for: sk_passenger_id in "pacflight"."pacflight_dbt_luigi"."dim_passengers"
+[0m06:43:09  Creating not null constraint for: fare_conditions in "pacflight"."pacflight_dbt_luigi"."dim_seats"
+[0m06:43:09  Creating not null constraint for: seat_no in "pacflight"."pacflight_dbt_luigi"."dim_seats"
+[0m06:43:09  Creating not null constraint for: sk_aircraft_code in "pacflight"."pacflight_dbt_luigi"."dim_seats"
+[0m06:43:09  Creating not null constraint for: sk_seat_id in "pacflight"."pacflight_dbt_luigi"."dim_seats"
+[0m06:43:09  Creating not null constraint for: time_id in "pacflight"."pacflight_dbt_luigi"."dim_times"
+[0m06:43:09  Creating not null constraint for: aircraft_code in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:09  Creating not null constraint for: arrival_airport in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:09  Creating not null constraint for: book_ref in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:09  Creating not null constraint for: boarding_no in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:09  Creating not null constraint for: flight_id in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:10  Creating not null constraint for: departure_airport in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:10  Creating not null constraint for: scheduled_arrival_date_local in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:10  Creating not null constraint for: flight_no in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:10  Creating not null constraint for: scheduled_arrival_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:10  Creating not null constraint for: scheduled_arrival_time_local in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:11  Creating not null constraint for: scheduled_arrival_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:11  Creating not null constraint for: scheduled_departure_date_local in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:11  Creating not null constraint for: scheduled_departure_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:12  Creating not null constraint for: scheduled_departure_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:12  Creating not null constraint for: scheduled_departure_time_local in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:12  Creating not null constraint for: sk_boarding_pass_id in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:12  Creating not null constraint for: seat_no in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:13  Creating not null constraint for: ticket_no in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:13  Creating not null constraint for: sk_passenger_id in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:13  Creating not null constraint for: actual_arrival_date_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:13  Creating not null constraint for: actual_arrival_time_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:14  Creating not null constraint for: actual_arrival_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:14  Creating not null constraint for: actual_arrival_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:14  Creating not null constraint for: actual_departure_date_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:15  Creating not null constraint for: actual_departure_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:15  Creating not null constraint for: book_date_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:15  Creating not null constraint for: actual_departure_time_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:15  Creating not null constraint for: arrival_airport in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:16  Creating not null constraint for: actual_departure_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:16  Creating not null constraint for: book_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:16  Creating not null constraint for: book_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:17  Creating not null constraint for: book_time_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:17  Creating not null constraint for: departure_airport in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:17  Creating not null constraint for: flight_no in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:18  Creating not null constraint for: nk_book in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:18  Creating not null constraint for: nk_flight_id in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:18  Creating not null constraint for: scheduled_arrival_date_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:19  Creating not null constraint for: scheduled_arrival_time_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:19  Creating not null constraint for: scheduled_arrival_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:20  Creating not null constraint for: scheduled_arrival_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:20  Creating not null constraint for: scheduled_departure_date_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:21  Creating not null constraint for: scheduled_departure_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:21  Creating not null constraint for: scheduled_departure_time_local in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:22  Creating not null constraint for: sk_booking_ticket_id in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:22  Creating not null constraint for: actual_arrival_date_local in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:22  Creating not null constraint for: actual_arrival_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:22  Creating not null constraint for: ticket_no in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:23  Creating not null constraint for: sk_passenger_id in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:23  Creating not null constraint for: scheduled_departure_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:23  Creating not null constraint for: actual_arrival_time_local in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: actual_arrival_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: actual_departure_date_local in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: actual_departure_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: actual_departure_time_local in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: aircraft_code in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: actual_departure_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: departure_airport in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: arrival_airport in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: flight_no in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:23  Creating not null constraint for: scheduled_arrival_date_local in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: nk_flight_id in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: scheduled_arrival_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: scheduled_arrival_time_local in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: scheduled_arrival_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: scheduled_departure_date_local in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: scheduled_departure_date_utc in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: scheduled_departure_time_local in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: scheduled_departure_time_utc in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: aircraft_code in "pacflight"."pacflight_dbt_luigi"."fct_seat_occupied_daily"
+[0m06:43:24  Creating not null constraint for: sk_flight_id in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating not null constraint for: arrival_airport in "pacflight"."pacflight_dbt_luigi"."fct_seat_occupied_daily"
+[0m06:43:24  Creating not null constraint for: departure_airport in "pacflight"."pacflight_dbt_luigi"."fct_seat_occupied_daily"
+[0m06:43:24  Creating not null constraint for: date_flight in "pacflight"."pacflight_dbt_luigi"."fct_seat_occupied_daily"
+[0m06:43:24  Creating not null constraint for: flight_no in "pacflight"."pacflight_dbt_luigi"."fct_seat_occupied_daily"
+[0m06:43:24  Creating not null constraint for: nk_flight_id in "pacflight"."pacflight_dbt_luigi"."fct_seat_occupied_daily"
+[0m06:43:24  Creating not null constraint for: sk_seat_occupied_daily in "pacflight"."pacflight_dbt_luigi"."fct_seat_occupied_daily"
+[0m06:43:24  Creating not null constraint for: sk_aircraft_code in "pacflight"."pacflight_dbt_luigi"."dim_aircrafts"
+[0m06:43:24  Creating primary key: DIM_AIRCRAFTS_SK_AIRCRAFT_CODE_PK
+[0m06:43:24  Creating not null constraint for: date_id in "pacflight"."pacflight_dbt_luigi"."dim_dates"
+[0m06:43:24  Creating not null constraint for: sk_airport_code in "pacflight"."pacflight_dbt_luigi"."dim_airports"
+[0m06:43:24  Creating primary key: DIM_AIRPORTS_SK_AIRPORT_CODE_PK
+[0m06:43:24  Creating not null constraint for: time_id in "pacflight"."pacflight_dbt_luigi"."dim_times"
+[0m06:43:24  Creating not null constraint for: sk_seat_id in "pacflight"."pacflight_dbt_luigi"."dim_seats"
+[0m06:43:24  Creating primary key: DIM_SEATS_SK_SEAT_ID_PK
+[0m06:43:24  Creating not null constraint for: sk_flight_id in "pacflight"."pacflight_dbt_luigi"."fct_flight_activities"
+[0m06:43:24  Creating primary key: FCT_FLIGHT_ACTIVITIES_SK_FLIGHT_ID_PK
+[0m06:43:24  Creating not null constraint for: sk_seat_occupied_daily in "pacflight"."pacflight_dbt_luigi"."fct_seat_occupied_daily"
+[0m06:43:24  Creating primary key: FCT_SEAT_OCCUPIED_DAILY_SK_SEAT_OCCUPIED_DAILY_PK
+[0m06:43:24  Creating not null constraint for: sk_passenger_id in "pacflight"."pacflight_dbt_luigi"."dim_passengers"
+[0m06:43:24  Creating primary key: DIM_PASSENGERS_SK_PASSENGER_ID_PK
+[0m06:43:25  Creating not null constraint for: sk_boarding_pass_id in "pacflight"."pacflight_dbt_luigi"."fct_boarding_pass"
+[0m06:43:25  Creating primary key: FCT_BOARDING_PASS_SK_BOARDING_PASS_ID_PK
+[0m06:43:28  Creating not null constraint for: sk_booking_ticket_id in "pacflight"."pacflight_dbt_luigi"."fct_booking_tickets"
+[0m06:43:28  Creating primary key: FCT_BOOKING_TICKETS_SK_BOOKING_TICKET_ID_PK
+[0m06:43:30  Creating foreign key: DIM_SEATS_SK_AIRCRAFT_CODE_FK referencing dim_aircrafts ['sk_aircraft_code']
+[0m06:43:31  Creating foreign key: FCT_BOARDING_PASS_ARRIVAL_AIRPORT_FK referencing dim_airports ['sk_airport_code']
+[0m06:43:31  Creating foreign key: FCT_BOARDING_PASS_AIRCRAFT_CODE_FK referencing dim_aircrafts ['sk_aircraft_code']
+[0m06:43:31  Creating foreign key: FCT_BOARDING_PASS_DEPARTURE_AIRPORT_FK referencing dim_airports ['sk_airport_code']
+[0m06:43:31  Creating foreign key: FCT_BOARDING_PASS_SCHEDULED_ARRIVAL_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:32  Creating foreign key: FCT_BOARDING_PASS_SCHEDULED_DEPARTURE_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:32  Creating foreign key: FCT_BOARDING_PASS_SCHEDULED_ARRIVAL_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:32  Creating foreign key: FCT_BOARDING_PASS_SCHEDULED_ARRIVAL_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:33  Creating foreign key: FCT_BOARDING_PASS_SCHEDULED_ARRIVAL_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:33  Creating foreign key: FCT_BOARDING_PASS_SCHEDULED_DEPARTURE_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:33  Creating foreign key: FCT_BOARDING_PASS_SCHEDULED_DEPARTURE_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:33  Creating foreign key: FCT_BOARDING_PASS_SCHEDULED_DEPARTURE_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:34  Creating foreign key: FCT_BOOKING_TICKETS_ACTUAL_ARRIVAL_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:34  Creating foreign key: FCT_BOOKING_TICKETS_ACTUAL_ARRIVAL_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:34  Creating foreign key: FCT_BOOKING_TICKETS_ACTUAL_ARRIVAL_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:35  Creating foreign key: FCT_BOARDING_PASS_SK_PASSENGER_ID_FK referencing dim_passengers ['sk_passenger_id']
+[0m06:43:35  Creating foreign key: FCT_BOOKING_TICKETS_ACTUAL_ARRIVAL_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:36  Creating foreign key: FCT_BOOKING_TICKETS_ACTUAL_DEPARTURE_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:36  Creating foreign key: FCT_BOOKING_TICKETS_ACTUAL_DEPARTURE_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:36  Creating foreign key: FCT_BOOKING_TICKETS_ACTUAL_DEPARTURE_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:37  Creating foreign key: FCT_BOOKING_TICKETS_ACTUAL_DEPARTURE_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:37  Creating foreign key: FCT_BOOKING_TICKETS_BOOK_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:37  Creating foreign key: FCT_BOOKING_TICKETS_ARRIVAL_AIRPORT_FK referencing dim_airports ['sk_airport_code']
+[0m06:43:38  Creating foreign key: FCT_BOOKING_TICKETS_BOOK_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:38  Creating foreign key: FCT_BOOKING_TICKETS_BOOK_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:38  Creating foreign key: FCT_BOOKING_TICKETS_BOOK_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:38  Creating foreign key: FCT_BOOKING_TICKETS_SCHEDULED_ARRIVAL_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:39  Creating foreign key: FCT_BOOKING_TICKETS_DEPARTURE_AIRPORT_FK referencing dim_airports ['sk_airport_code']
+[0m06:43:39  Creating foreign key: FCT_BOOKING_TICKETS_SCHEDULED_ARRIVAL_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:39  Creating foreign key: FCT_BOOKING_TICKETS_SCHEDULED_ARRIVAL_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:40  Creating foreign key: FCT_BOOKING_TICKETS_SCHEDULED_DEPARTURE_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:40  Creating foreign key: FCT_BOOKING_TICKETS_SCHEDULED_ARRIVAL_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:40  Creating foreign key: FCT_BOOKING_TICKETS_SCHEDULED_DEPARTURE_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:40  Creating foreign key: FCT_BOOKING_TICKETS_SCHEDULED_DEPARTURE_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:41  Creating foreign key: FCT_BOOKING_TICKETS_SCHEDULED_DEPARTURE_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ACTUAL_ARRIVAL_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ACTUAL_ARRIVAL_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ACTUAL_ARRIVAL_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ACTUAL_ARRIVAL_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ACTUAL_DEPARTURE_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ACTUAL_DEPARTURE_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ACTUAL_DEPARTURE_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ACTUAL_DEPARTURE_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_ARRIVAL_AIRPORT_FK referencing dim_airports ['sk_airport_code']
+[0m06:43:41  Creating foreign key: FCT_FLIGHT_ACTIVITIES_AIRCRAFT_CODE_FK referencing dim_aircrafts ['sk_aircraft_code']
+[0m06:43:42  Creating foreign key: FCT_BOOKING_TICKETS_SK_PASSENGER_ID_FK referencing dim_passengers ['sk_passenger_id']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_DEPARTURE_AIRPORT_FK referencing dim_airports ['sk_airport_code']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_SCHEDULED_ARRIVAL_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_SCHEDULED_ARRIVAL_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_SCHEDULED_ARRIVAL_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_SCHEDULED_ARRIVAL_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_SCHEDULED_DEPARTURE_DATE_LOCAL_FK referencing dim_dates ['date_id']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_SCHEDULED_DEPARTURE_TIME_LOCAL_FK referencing dim_times ['time_id']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_SCHEDULED_DEPARTURE_DATE_UTC_FK referencing dim_dates ['date_id']
+[0m06:43:42  Creating foreign key: FCT_FLIGHT_ACTIVITIES_SCHEDULED_DEPARTURE_TIME_UTC_FK referencing dim_times ['time_id']
+[0m06:43:42  Creating foreign key: FCT_SEAT_OCCUPIED_DAILY_AIRCRAFT_CODE_FK referencing dim_aircrafts ['sk_aircraft_code']
+[0m06:43:43  Creating foreign key: FCT_SEAT_OCCUPIED_DAILY_ARRIVAL_AIRPORT_FK referencing dim_airports ['sk_airport_code']
+[0m06:43:43  Creating foreign key: FCT_SEAT_OCCUPIED_DAILY_DATE_FLIGHT_FK referencing dim_dates ['date_id']
+[0m06:43:43  Creating foreign key: FCT_SEAT_OCCUPIED_DAILY_DEPARTURE_AIRPORT_FK referencing dim_airports ['sk_airport_code']
+[0m06:43:43  Finished dbt Constraints
+[0m06:43:43  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m06:43:43  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m06:43:43  
+[0m06:43:43  
+[0m06:43:43  Finished running 161 tests, 1 hook in 0 hours 1 minutes and 26.75 seconds (86.75s).
+[0m06:43:43  
+[0m06:43:43  [32mCompleted successfully[0m
+[0m06:43:43  
+[0m06:43:43  Done. PASS=161 WARN=0 ERROR=0 SKIP=0 TOTAL=161

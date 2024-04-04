@@ -1,0 +1,51 @@
+[0m06:40:43  Running with dbt=1.7.8
+[0m06:40:43  Registered adapter: postgres=1.7.8
+[0m06:40:44  Found 16 models, 1 operation, 2 seeds, 161 tests, 8 sources, 0 exposures, 0 metrics, 859 macros, 0 groups, 0 semantic models
+[0m06:40:44  
+[0m06:40:44  Concurrency: 4 threads (target='dev')
+[0m06:40:44  
+[0m06:40:44  1 of 16 START sql view model pacflight_dbt_luigi.stg_pacflight__aircrafts_data . [RUN]
+[0m06:40:44  2 of 16 START sql view model pacflight_dbt_luigi.stg_pacflight__airports_data .. [RUN]
+[0m06:40:44  3 of 16 START sql view model pacflight_dbt_luigi.stg_pacflight__boarding_passes  [RUN]
+[0m06:40:44  4 of 16 START sql view model pacflight_dbt_luigi.stg_pacflight__bookings ....... [RUN]
+[0m06:40:45  3 of 16 OK created sql view model pacflight_dbt_luigi.stg_pacflight__boarding_passes  [[32mCREATE VIEW[0m in 0.80s]
+[0m06:40:45  1 of 16 OK created sql view model pacflight_dbt_luigi.stg_pacflight__aircrafts_data  [[32mCREATE VIEW[0m in 0.81s]
+[0m06:40:45  4 of 16 OK created sql view model pacflight_dbt_luigi.stg_pacflight__bookings .. [[32mCREATE VIEW[0m in 0.80s]
+[0m06:40:45  2 of 16 OK created sql view model pacflight_dbt_luigi.stg_pacflight__airports_data  [[32mCREATE VIEW[0m in 0.83s]
+[0m06:40:45  6 of 16 START sql view model pacflight_dbt_luigi.stg_pacflight__seats .......... [RUN]
+[0m06:40:45  7 of 16 START sql view model pacflight_dbt_luigi.stg_pacflight__ticket_flights . [RUN]
+[0m06:40:45  8 of 16 START sql view model pacflight_dbt_luigi.stg_pacflight__tickets ........ [RUN]
+[0m06:40:45  5 of 16 START sql view model pacflight_dbt_luigi.stg_pacflight__flights ........ [RUN]
+[0m06:40:45  6 of 16 OK created sql view model pacflight_dbt_luigi.stg_pacflight__seats ..... [[32mCREATE VIEW[0m in 0.32s]
+[0m06:40:45  9 of 16 START sql table model pacflight_dbt_luigi.dim_airports ................. [RUN]
+[0m06:40:45  5 of 16 OK created sql view model pacflight_dbt_luigi.stg_pacflight__flights ... [[32mCREATE VIEW[0m in 0.42s]
+[0m06:40:45  10 of 16 START sql table model pacflight_dbt_luigi.dim_aircrafts ............... [RUN]
+[0m06:40:45  7 of 16 OK created sql view model pacflight_dbt_luigi.stg_pacflight__ticket_flights  [[32mCREATE VIEW[0m in 0.52s]
+[0m06:40:45  8 of 16 OK created sql view model pacflight_dbt_luigi.stg_pacflight__tickets ... [[32mCREATE VIEW[0m in 0.53s]
+[0m06:40:45  11 of 16 START sql table model pacflight_dbt_luigi.dim_passengers .............. [RUN]
+[0m06:40:45  9 of 16 OK created sql table model pacflight_dbt_luigi.dim_airports ............ [[32mSELECT 104[0m in 0.46s]
+[0m06:40:45  10 of 16 OK created sql table model pacflight_dbt_luigi.dim_aircrafts .......... [[32mSELECT 9[0m in 0.29s]
+[0m06:40:45  12 of 16 START sql table model pacflight_dbt_luigi.dim_seats ................... [RUN]
+[0m06:40:45  13 of 16 START sql table model pacflight_dbt_luigi.fct_flight_activities ....... [RUN]
+[0m06:40:45  14 of 16 START sql table model pacflight_dbt_luigi.fct_seat_occupied_daily ..... [RUN]
+[0m06:40:46  12 of 16 OK created sql table model pacflight_dbt_luigi.dim_seats .............. [[32mSELECT 1339[0m in 0.46s]
+[0m06:40:51  11 of 16 OK created sql table model pacflight_dbt_luigi.dim_passengers ......... [[32mSELECT 366733[0m in 5.95s]
+[0m06:40:51  15 of 16 START sql table model pacflight_dbt_luigi.fct_boarding_pass ........... [RUN]
+[0m06:40:51  16 of 16 START sql table model pacflight_dbt_luigi.fct_booking_tickets ......... [RUN]
+[0m06:41:00  14 of 16 OK created sql table model pacflight_dbt_luigi.fct_seat_occupied_daily  [[32mSELECT 11438[0m in 14.06s]
+[0m06:41:57  15 of 16 OK created sql table model pacflight_dbt_luigi.fct_boarding_pass ...... [[32mSELECT 579686[0m in 66.33s]
+[0m06:41:58  13 of 16 OK created sql table model pacflight_dbt_luigi.fct_flight_activities .. [[32mSELECT 16715[0m in 72.25s]
+[0m06:41:58  16 of 16 OK created sql table model pacflight_dbt_luigi.fct_booking_tickets .... [[32mSELECT 574830[0m in 66.74s]
+[0m06:41:58  
+[0m06:41:58  Running 1 on-run-end hook
+[0m06:41:58  Running dbt Constraints
+[0m06:41:58  Finished dbt Constraints
+[0m06:41:58  1 of 1 START hook: dbt_constraints.on-run-end.0 ................................ [RUN]
+[0m06:41:58  1 of 1 OK hook: dbt_constraints.on-run-end.0 ................................... [[32mOK[0m in 0.00s]
+[0m06:41:58  
+[0m06:41:58  
+[0m06:41:58  Finished running 8 view models, 8 table models, 1 hook in 0 hours 1 minutes and 14.59 seconds (74.59s).
+[0m06:41:58  
+[0m06:41:58  [32mCompleted successfully[0m
+[0m06:41:58  
+[0m06:41:58  Done. PASS=16 WARN=0 ERROR=0 SKIP=0 TOTAL=16

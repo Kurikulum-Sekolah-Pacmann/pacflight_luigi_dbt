@@ -1,0 +1,36 @@
+[0m06:40:19  Running with dbt=1.7.8
+[0m06:40:19  dbt version: 1.7.8
+[0m06:40:19  python version: 3.9.17
+[0m06:40:19  python path: /home/shandytp/learn-dbt/venv/bin/python
+[0m06:40:19  os info: Linux-5.15.146.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m06:40:19  Using profiles dir at /home/shandytp/.dbt
+[0m06:40:19  Using profiles.yml file at /home/shandytp/.dbt/profiles.yml
+[0m06:40:19  Using dbt_project.yml file at /home/shandytp/learn-dbt/live-class-week-7/pacflight_dbt_luigi/dbt/dbt_project.yml
+[0m06:40:19  adapter type: postgres
+[0m06:40:19  adapter version: 1.7.8
+[0m06:40:19  Configuration:
+[0m06:40:19    profiles.yml file [[32mOK found and valid[0m]
+[0m06:40:19    dbt_project.yml file [[32mOK found and valid[0m]
+[0m06:40:19  Required dependencies:
+[0m06:40:19   - git [[32mOK found[0m]
+
+[0m06:40:19  Connection:
+[0m06:40:19    host: localhost
+[0m06:40:19    port: 5434
+[0m06:40:19    user: postgres
+[0m06:40:19    database: pacflight
+[0m06:40:19    schema: pacflight_dbt_luigi
+[0m06:40:19    connect_timeout: 10
+[0m06:40:19    role: None
+[0m06:40:19    search_path: None
+[0m06:40:19    keepalives_idle: 0
+[0m06:40:19    sslmode: None
+[0m06:40:19    sslcert: None
+[0m06:40:19    sslkey: None
+[0m06:40:19    sslrootcert: None
+[0m06:40:19    application_name: dbt
+[0m06:40:19    retries: 1
+[0m06:40:19  Registered adapter: postgres=1.7.8
+[0m06:40:19    Connection test: [[32mOK connection ok[0m]
+
+[0m06:40:19  [32mAll checks passed![0m
