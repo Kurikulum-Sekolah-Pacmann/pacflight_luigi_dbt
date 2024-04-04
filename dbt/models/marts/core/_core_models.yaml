@@ -532,6 +532,7 @@ models:
       - name: total_seat
         description: "Total seat available for each flight"
         tests:
+          - not_null
           - dbt_expectations.expect_column_values_to_be_between:
               min_value: 0
               max_value: 999
@@ -539,6 +540,7 @@ models:
       - name: seat_occupied
         description: "Total seat occupied for each flight"
         tests:
+          - not_null
           - dbt_expectations.expect_column_values_to_be_between:
               min_value: 0
               max_value: 999
@@ -546,6 +548,7 @@ models:
       - name: empty_seats
         description: "Total empty seats for each flight"
         tests:
+          - not_null
           - dbt_expectations.expect_column_values_to_be_between:
               min_value: 0
               max_value: 999
