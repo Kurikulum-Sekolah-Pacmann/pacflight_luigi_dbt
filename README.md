@@ -1,15 +1,28 @@
-Welcome to your new dbt project!
+# **Integrate PacFlight dbt + Luigi**
+---
 
-### Using the starter project
+### **How it Works**
+---
+1. Buatlah task dbt sesuai dengan perintah
+2. Jalankan semua task yang sudah dibuat
+3. Buatlah script `elt_pipeline.py` untuk orchestrate semua task yang ada di dbt
 
-Try running the following commands:
-- dbt run
-- dbt test
+### **How to Run Luigi**
+---
 
+1. Install library dengan cara `pip install -r requirements.txt`
+2. Lakukan setup dbt seperti di repository ini https://github.com/shandytepe/live_class_week6_data_storage
+3. Jalankan Python script dengan cara `python -m elt_pipeline`
+4. Atau, jika ingin menjalankan via Shell Script dan memberikan scheduling langkah awal ubah permission dari shell script dengan cara `chmod 755 ./run_luigi.sh`
+5. Setelah itu jalankan `./run_luigi.sh`
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
+### **Tools**
+---
+
+1. Python
+2. Luigi
+3. dbt
+4. SQL
+5. Postgres
+6. DBeaver
+7. Docker
