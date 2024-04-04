@@ -1,7 +1,6 @@
 import subprocess as sp
 import luigi
 import datetime
-import time
 from typing import TypeVar, Callable
 
 T = TypeVar("T")
@@ -40,8 +39,6 @@ class dbtDebug(luigi.Task):
                 else:
                     print("Failed to run dbt debug process")
 
-            time.sleep(1)
-
         except Exception as e:
             raise e
 
@@ -74,8 +71,6 @@ class dbtDeps(luigi.Task):
 
                 else:
                     print("Failed to run dbt deps process")
-
-            time.sleep(1)
 
         except Exception as e:
             raise e
@@ -110,8 +105,6 @@ class dbtRun(luigi.Task):
                 else:
                     print("Failed to run dbt data model")
 
-            time.sleep(1)
-
         except Exception as e:
             raise e
 
@@ -144,8 +137,6 @@ class dbtTest(luigi.Task):
 
                 else:
                     print("Failed running testing and create constraints")
-
-            time.sleep(1)
 
         except Exception as e:
             raise e
