@@ -529,6 +529,27 @@ models:
               pk_table_name: ref('dim_aircrafts')
               pk_column_name: sk_aircraft_code
 
+      - name: total_seat
+        description: "Total seat available for each flight"
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 999
+
+      - name: seat_occupied
+        description: "Total seat occupied for each flight"
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 999
+
+      - name: empty_seats
+        description: "Total empty seats for each flight"
+        tests:
+          - dbt_expectations.expect_column_values_to_be_between:
+              min_value: 0
+              max_value: 999
+
   - name: fct_boarding_pass
     description: "Fact table for boarding_pass contains from tickets, ticket_flights, flights, and boarding_passes table staging layers,
                   also contains table from dim_passengers, dim_airports, and dim_aircrafts"
