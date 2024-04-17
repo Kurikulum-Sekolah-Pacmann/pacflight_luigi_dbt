@@ -1,4 +1,4 @@
-# **Integrate PacFlight dbt + Luigi**
+# **Live Class Integrate PacFlight dbt + Luigi**
 ---
 
 ### **How it Works**
